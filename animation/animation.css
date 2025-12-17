@@ -1,0 +1,54 @@
+.box-1 {
+width: 150px;
+height: 150px;
+background-color: yellow;
+position: absolute;
+left: 0;
+bottom: 50%;
+}
+
+.box-2 {
+    width: 150px;
+    height: 150px;
+background-color: yellow;
+position: absolute;
+right: 0;
+bottom: 50%;
+
+}
+.box-1 {
+    animation: mergebox 2s infinite 1s;
+}
+
+@keyframes mergebox {
+from {
+    left: 0;
+    bottom: 50% ;
+    background-color: yellow;
+}
+to {
+     left: calc(50%);
+    bottom: 50% ;
+    background-color: red;
+
+}
+
+}
+
+.box-2 {
+    animation: merge_box 2s infinite 1s;
+}
+
+@keyframes merge_box {
+from {
+    right: 0;
+    bottom: 50% ;
+    background-color: yellow;
+}
+to {
+     right: calc(50%);
+    bottom: 50% ;
+    background-color: red;
+
+}
+}
